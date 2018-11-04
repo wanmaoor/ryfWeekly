@@ -8,12 +8,13 @@
   <title>阮一峰每周分享</title>
   <link rel="stylesheet" href="./layui-v2.4.5/layui/css/layui.css">
   <style>
-    .list{
+    .list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
-    .list a{
+
+    .list a {
       width: 20%;
     }
   </style>
@@ -22,20 +23,106 @@
 <body>
   <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>
-      <h2>阮一峰每周分享摘录</h2>
+      <h1>阮一峰每周分享摘录</h1>
     </legend>
   </fieldset>
   <div class="layui-container">
     <div class="layui-col-xs12">
       <div class="layui-collapse" lay-accordion="">
         <div class="layui-colla-item">
-          <h2 class="layui-colla-title">电子书/文章</h2>
+          <h2 class="layui-colla-title">电子书/文章/教程</h2>
           <div class="layui-colla-content layui-show">
 
-            <div class="layui-collapse" lay-accordion="">
+            <div class="layui-collapse">
               <div class="layui-colla-item">
                 <h2 class="layui-colla-title">前端</h2>
                 <div class="layui-colla-content">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><a href="https://github.com/wizardforcel/eloquent-js-3e-zh" target="_blank">Eloquent JavaScript 3rd edition 中文版</a></h2>
+                        <div class="layui-colla-content">
+                            <p>一本开源的 JavaScript 语言的入门教材。</p>
+                        </div>
+                      </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/mui-org/material-ui/releases/tag/v1.0.0"
+                        target="_blank">Material-UI</a></h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018053009.jpg" alt="" title="">
+                      <p>大家知道，谷歌的材质化组件（Material Design）是 Angular 专用的。社区维护的 React 移植版Material-UI，今天发布 1.0
+                        版，已经完全可用了。以后，React 项目照样可以有官方安卓 UI 的那种材质化效果。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://lea.verou.me/2018/05/responsive-tables-revisited/"
+                        target="_blank">响应式表格的两种解法</a></h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018053008.jpg" alt="" title="">
+                      <p>手机怎么显示表格？常见的方法是将表格转为键值对。Lea Verou 给出了两种纯 CSS 的解法，不需要任何多余的 HTML 标签。</p>
+                      <p>一种是使用 text-shadow 属性复制表头，另一个使用 element 方法复制表头。但是，这两种方法都有局限，前者是单元格里不能有换行，后者是只有 Firefox 支持。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.fastly.com/blog/headers-we-dont-want" target="_blank">不必要的
+                        HTTP 头信息</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>本文统计了30个最常见的 HTTP 头信息，逐个讨论哪些是必要的，哪些是没必要的。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/huytd/kanban-app" target="_blank">Elm +
+                        Rust 开发桌面应用</a></h2>
+                    <div class="layui-colla-content">
+                      <p>目前，使用 Web 技术开发桌面应用，主要通过 Electron。它的缺点是，有时你只是想要在桌面上展示一个网页，不需要跟本地文件系统交互，但是不得不把整个 Chromium 浏览器和
+                        V8 引擎包含在这个应用里面，导致不管逻辑是否复杂，任何一个 Electron 应用都至少有几十MB的大小。<br>
+                        这个项目展示了另一种开发桌面应用的可能。它的原理是，任何操作系统都有自己的 WebView，也就是说可以在应用程序里面调用 WebView 展示网页。那么可以使用 Rust 语言打包
+                        WebView，而 JS 脚本部分交给 Elm 语言生成。由于 WebView 是系统提供的，所以打包出来非常小，一般只有几百KB，资源占用也很少。</p>
+                      <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018051812.jpg" alt="" title="">
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/krasimir/react-in-patterns" target="_blank">《React
+                        in patterns》</a></h2>
+                    <div class="layui-colla-content">
+                      <p>React 如何使用各种编程模式？</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://2ality.com/2018/04/async-iter-nodejs.html" target="_blank">Node
+                        10 的异步遍历器</a></h2>
+                    <div class="layui-colla-content">
+                      <p>上个月底发布的<a href="https://nodesource.com/blog/what-you-can-expect-from-node-js-10" target="_blank">Node
+                          10 </a> 支持<a href="http://es6.ruanyifeng.com/#docs/async#%E5%BC%82%E6%AD%A5%E9%81%8D%E5%8E%86%E5%99%A8">异步遍历器</a>，对
+                        Stream 操作有重大影响。这篇文章介绍了如何用这个新语法读取文件内容，写法变得很自然。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://yuque.com/airing/canvas" target="_blank">Canvas:
+                        Draw on the web</a></h2>
+                    <div class="layui-colla-content">
+                      <p>国产的 HTML5 Canvas 教程。从零基础开始，到Canvas
+                        API，再到基本动画与高级动画的实现，还会介绍视音频的处理、移动应用，最后如果有时间会扩展说一说3D、多人应用、游戏制作等。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://evilmartians.com/chronicles/optimizing-react-virtual-dom-explained"
+                        target="_blank">Optimizing React: Virtual DOM explained</a></h2>
+                    <div class="layui-colla-content">
+                      <p>React 的虚拟 DOM 机制的详细解释， JSX 代码如何变成虚拟 DOM 的数据结构。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://wasmweekly.news/" target="_blank">WebAssembly 周刊</a></h2>
+                    <div class="layui-colla-content">
+                      <p>每周给你发送一封邮件，介绍本周值得关注的 WebAssembly 消息。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://keithjgrant.com/posts/2018/meet-the-new-dialog-element/"
+                        target="_blank">Meet the New Dialog Element</a></h2>
+                    <div class="layui-colla-content">
+                      <p>HTML 5.2 新增了 dialog 元素，这个元素将来一定会广泛使用，因为它提供了浏览器原生 Modal 窗口。</p>
+                    </div>
+                  </div>
                   <div class="layui-colla-item">
                     <h2 class="layui-colla-title"><a href="https://github.com/reactjs/react-basic" target="_blank">React
                         - Basic Theoretical Concepts</a></h2>
@@ -52,9 +139,92 @@
                   </div>
                 </div>
               </div>
+
               <div class="layui-colla-item">
-                <h2 class="layui-colla-title">计算机</h2>
+                <h2 class="layui-colla-title">计算机/算法</h2>
                 <div class="layui-colla-content">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><a href="https://adrianmejia.com/blog/2018/04/28/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/" target="_blank">各种数据结构的 JavaScript 实现</a>(英文)</h2>
+                        <div class="layui-colla-content">
+                            <p>这篇文章针对初学者，介绍 Array、HashMaps、Sets、Linked Lists、Stacks、Queues 这六种数据结构的 JavaScript 实现。</p>
+                        </div>
+                      </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://toc.cryptobook.us/" target="_blank">应用加密法的研究生教材</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>这是开源教材，介绍密钥加密的知识。因为是研究生教材，内容不容易。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0"
+                        target="_blank">高性能矩阵乘法</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060815.jpg" alt="" title="">
+                      <p>矩阵乘法需要计算每一行与所有列的乘积之和，如果矩阵很大，乘法计算是非常耗时的。这篇文章讨论如何实现一个高性能的矩阵乘法算法。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md"
+                        target="_blank">JavaScript 算法与数据结构</a>(中文)</h2>
+                    <div class="layui-colla-content">
+                      <p>这个仓库收集了30多种算法的 JavaScript 实现。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://xaviergeerinck.com/markov-property-chain-reward-decision"
+                        target="_blank">马尔可夫决策过程</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>如何利用马尔可夫链建立一个决策模型，文章较好懂。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://setosa.io/ev/markov-chains/" target="_blank">最简单的马尔可夫链图解</a></h2>
+                    <div class="layui-colla-content">
+                      <p>下面是最简单的马尔可夫链图解。系统包括 A 和 B 两个状态。一共有四种转化路径：A 到 A、A 到 B、B 到 A，B 到 B。每种路径的可能性都是
+                        50%，就得到了随机的运动轨迹。一个通俗的实例是，每天有"晴天"和"下雨"两种天气，天气变化的概率是50%，那么马尔可夫链就可以生成一个未来一周天气的模型。</p>
+                      <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018051809.png" alt="">
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/OpenGenus/cosmos" target="_blank">Cosmos</a></h2>
+                    <div class="layui-colla-content">
+                      <p>收集各种算法的代码实现的仓库。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://webassemblycode.com/sha256-books-implementation/"
+                        target="_blank">SHA256 的实现</a></h2>
+                    <div class="layui-colla-content">
+                      <p>SHA256 是目前常用哈希算法里面最可靠的，Git 和比特币都依赖这种算法。本文解释了它的实现。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://ds8.gitbooks.io/textbook/content/" target="_blank">《计算与推断：数据科学基础》</a></h2>
+                    <div class="layui-colla-content">
+                      <p>本书是加州大学伯克利分校《数据科学导论》课程的教材，现在开源了。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://betanalpha.github.io/assets/case_studies/probability_theory.html"
+                        target="_blank">Probability Theory (For Scientists and Engineers)</a></h2>
+                    <div class="layui-colla-content">
+                      <p>一个概率论的概览性介绍，每个章节后面有一个 R 语言的小例子。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.listendata.com/2018/03/regression-analysis.html"
+                        target="_blank">数据回归的15种类型</a></h2>
+                    <div class="layui-colla-content">
+                      <p>回归（regression）是数据处理的常用技术，用来找出数据的模式。本文介绍数据回归的15种拟合。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://mrpandey.github.io/d3graphTheory/index.html" target="_blank">D3
+                        Graph Theory</a></h2>
+                    <div class="layui-colla-content">
+                      <p>图理论（graph theory）是重要的数学分支，在数据处理领域有着重要应用。这个教程采用可视化库 D3，把图理论变成了可视化互动教程。</p>
+                    </div>
+                  </div>
                   <div class="layui-colla-item">
                     <h2 class="layui-colla-title"><a href="http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/"
                         target="_blank">Low Level Bit Hacks You Absolutely Must Know</a></h2>
@@ -64,49 +234,796 @@
                   </div>
                 </div>
               </div>
+
               <div class="layui-colla-item">
-                <h2 class="layui-colla-title">工具</h2>
-                <div class="layui-colla-content layui-show">
-
-                  <div class="layui-collapse" lay-accordion="">
-                    <div class="layui-colla-item">
-                      <h2 class="layui-colla-title"> <a href="https://flaviocopes.com/chrome-devtools-tips/#drag-and-drop-in-the-elements-panel"
-                          target="blank">Chrome DevTools 的一些使用技巧</a></h2>
-                      <div class="layui-colla-content layui-show">
-
-                      </div>
+                <h2 class="layui-colla-title">人工智能/机器学习</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://luden.io/wtl/" target="_blank">while True: learn()</a>(游戏)</h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061413.jpg" alt="" title="">
+                      <p>一个帮助玩家学习人工智能的游戏。你扮演一个人工智能专家，在游戏的引导下解决各种问题。</p>
                     </div>
-
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://hackernoon.com/deeplearning-101-coursera-vs-udemy-vs-udacity-b4eb3de06dbe"
+                        target="_blank">深度学习在线课程比较</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>深度学习是目前很热名的主题，各大网校都有这方面的课程。这篇文章比较了美国三大教育平台的深度学习课程：Coursera、Udemy 和 Udacity。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://zhuanlan.zhihu.com/p/35451395" target="_blank">前端人工智能？TensorFlow.js
+                        学会游戏通关</a>(中文)</h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060814.jpg" alt="" title="">
+                      <p>作者使用 TensorFlow.js，让程序自动完成 Chrome 浏览器的内置小游戏"恐龙快跑"。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://heartbeat.fritz.ai/introduction-to-decision-tree-learning-cd604f85e236"
+                        target="_blank">决策树模型入门</a></h2>
+                    <div class="layui-colla-content">
+                      <p>决策树模型（Decision Tree）是最简单的机器学习模型，也最容易理解。当决策受到多个因素影响时，这个模型相当有用。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://www.mlyearning.org/" target="_blank">《Machine
+                        Learning Yearning》</a></h2>
+                    <div class="layui-colla-content">
+                      <p>吴恩达（Andrew Ng）是斯坦福大学的教授，人工智能领域的权威，曾经担任过百度的首席科学家。<br>
+                        他的新书《Machine Learning
+                        Yearning》现在可以免费订阅。今后几个月里面，他每完成一个部分，你就会得到邮件通知，可以立即读到。根据说明，这本书大概100页左右，每章的长度很短，非常容易阅读。内容主要关于如何实现你自己的机器学习项目，重点不是算法，而是如何运用算法到真实项目。</p>
+                    </div>
                   </div>
                 </div>
+              </div>
 
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">编程语言/框架</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://blog.beezwax.net/2017/07/07/writing-a-markdown-compiler/"
+                        target="_blank">编写 Markdown 解析器</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>一组三个部分的系列文章，介绍如何从零开始写一个 Markdown 解析器。作者是用 Ruby 语言实现，但是一些基本知识的介绍跟语言无关，写得挺好的。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go"
+                        target="_blank">Docker and Go</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>2013年的时候，Docker 团队介绍他们为什么使用 Go 语言写 Docker。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/liukun-lk/awesome-ruby-china" target="_blank">awesome-ruby-china</a></h2>
+                    <div class="layui-colla-content">
+                      <p>Ruby China 论坛的精华贴整理。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/jackfrued/Python-100-Days" target="_blank">Python
+                        - 100天从新手到大师</a>(中文)</h2>
+                    <div class="layui-colla-content">
+                      <p>一本针对初学者的 Python 教程。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/luhuisicnu/The-Flask-Mega-Tutorial-zh"
+                        target="_blank">Flask 教程的中文版</a>(中文)</h2>
+                    <div class="layui-colla-content">
+                      <p>Flask 是 Python 的 Web 开发框架。这个教程教你如何用 Python 和 Flask 来创建 Web 应用。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://notes.eatonphil.com/writing-a-simple-json-parser.html">如何用
+                        Python 实现一个简单的 JSON 解析器？</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>代码还算简单，可以作为编译器的训练。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.enlightenment.org/docs/c/start" title="docs:c:start">C
+                        Primer</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>一张网页的《C 语言的入门教程》，比较注重内存部分的讲解。写得不是很易读，但是还是可以看一下。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/"
+                        target="_blank">为什么 go 结构是有害的？</a></h2>
+                    <div class="layui-colla-content">
+                      <p>多线程编程之中，有一种 go 结构，就是主线程之外分出一个线程，这个线程完成任务以后，再回到主线程。作者认为，这种结构是有害的。他的最精彩观点就是：如果允许使用 go
+                        结构，那么所有的语言功能都可以用这种结构实现，程序很快就会乱做一团。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://dev.to/georgeoffley/data-structures-in-python-lists-and-the-avengers-305f"
+                        target="_blank">Python 列表的用法</a></h2>
+                    <div class="layui-colla-content">
+                      <p>列表（list）是最基本的数据结构，这篇文章通过实例讲解 Python 如何操作列表。很容易读，就是内容比较浅，只适合刚刚开始学 Python 的初学者。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">Rust 的内存安全革命（<a href="http://szpzs.oschina.io/2018/04/28/rust-memory-safety-revolution/#more"
+                        target="_blank">中译</a>、<a href="https://anixe.pl/content/news/rust_memory_safety_revolution"
+                        target="_blank">原文</a>）</h2>
+                    <div class="layui-colla-content">
+                      <p>Rust 语言不需要手动管理内容，却也没有垃圾回收机制，这是怎么实现的？本文集中介绍 Rust 最重要的核心特性：内存管理。这是 Rust
+                        的主要创新之一，它的许多独特的特点是基于此的。本文写给不知道 Rust 或刚刚开始学习它的程序员的。对于熟悉 C、C++ 或其他使用手动管理内存以及使用垃圾回收器语言的读者来说会更容易理解
+                        Rust 的特点。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://stevedonovan.github.io/rust-gentle-intro/readme.html"
+                        target="_blank">A Gentle Introduction To Rust</a></h2>
+                    <div class="layui-colla-content">
+                      <p>Rust 语言入门教程</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">Linux/Unix</h2>
+                <div class="layui-colla-content">
+                    <div class="layui-colla-item">
+                        <h2 class="layui-colla-title"><a href="https://hackertarget.com/tcpdump-examples/" target="_blank">tcpdump 示例教程</a>(英文)</h2>
+                        <div class="layui-colla-content">
+                            <p>tcpdump 是一个 Linux 命令行工具，用来查看 TCP 通信。</p>
+                        </div>
+                      </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://hackernoon.com/a-complete-beginners-guide-to-installing-a-bitcoin-full-node-on-linux-2018-edition-cb8e384479ea"
+                        target="_blank">初学者在 Linux 上安装比特币完整节点指南（2018年版）</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>这篇文章教你如何在没有任何 Linux 经验的情况下，全新安装Kubuntu 18.04系统，并在这个系统安装比特币完整节点，加入比特币网络。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://ia802309.us.archive.org/25/items/pdfy-MgN0H1joIoDVoIC7/The_AWK_Programming_Language.pdf"
+                        target="_blank">Awk 编程语言</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>awk 是 Unix 命令行处理文本的有用工具，这里是1988年出版的 awk 教程。Unix 命令行高度稳定，所以这本教材也没那么过时。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://termux.com/" target="_blank">Termux</a></h2>
+                    <div class="layui-colla-content">
+                      <p>安卓设备的终端仿真器，用来在安卓设备上模拟 Linux 环境。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://google.github.io/styleguide/shell.xml" target="_blank">谷歌官方的
+                        Bash 脚本风格要求</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>Bash 脚本的语法远比编程语言宽松，你很容易写出难以阅读、风格混乱的脚本，可以参考谷歌如何写 Bash 脚本。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.ostechnix.com/pacvim-a-cli-game-to-learn-vim-commands/">PacVim</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>通过吃豆子（PacMan）游戏学习 Vim 操作的命令行游戏。</p>
+                      <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018052512.jpg" alt="" title="">
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf">Linux:
+                        a Portable Operating System</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>这是 Linus Torvalds 的硕士毕业论文，介绍 Linux
+                        系统如何适配不同的硬件架构。这篇论文不涉及代码，只介绍一些概念性的东西，但也不是那么好懂，至少我没有完全看懂。对内核和操作系统感兴趣的朋友，可以读一下。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://jvns.ca/blog/2018/05/11/batch-editing-files-with-ed/">ed
+                        命令的一种用法</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>ed 是 Unix 系统里面最古老的命令行编辑器，但是功能并不弱。这篇文章介绍了一个使用 ed 的简单实例。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">软件开发</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.discoverdev.io/" target="_blank">DiscoverDev.io</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>该网站每天列出5～10篇当天值得阅读的软件文章。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://blog.codepipes.com/testing/software-testing-antipatterns.html#anti-pattern-7---having-flaky-or-slow-tests"
+                        target="_blank">软件测试的误区</a></h2>
+                    <div class="layui-colla-content">
+                      <p>本文讨论了13种软件测试的错误做法，比如：（1）单元测试与集成测试的比例不正确；（2）太相信
+                        TDD（即写代码之前就写测试）；（3）写了大量很慢的测试；（4）手动运行测试；（5）没有把生产环境的错误写成测试等等。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">可视化</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://eng.uber.com/deckgl-v5/" target="_blank">deck.gl</a></h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061418.jpg" alt="" title="">
+                      <p>Uber 开源的基于地图的数据可视化框架。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://d3indepth.com/" target="_blank">D3 In Depth</a></h2>
+                    <div class="layui-colla-content">
+                      <p>可视化引擎 D3 的教程。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">后端/数据库/分布式/架构</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://blogs.dxc.technology/2018/05/08/everything-old-is-new-again-microservices/">Everything
+                        old is new again: Microservices</a></h2>
+                    <div class="layui-colla-content">
+                      <p>这篇短文讨论了 SOA 架构（服务导向架构）和微服务架构的差异，为什么 SOA 会演变成微服务。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://jaminzhang.github.io/dns/The-Reason-of-There-Is-Only-13-DNS-Root-Servers/">只有
+                        13 台 DNS 根域名服务器原因</a></h2>
+                    <div class="layui-colla-content">
+                      <p>我们经常听到 DNS 根域名服务有 13 台，那么是为什么呢？ 今天我们来深入了解下。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://hackernoon.com/a-thorough-introduction-to-distributed-systems-3b91562c9b3c">分布式系统的全面介绍</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>什么是分布式系统？最简单的定义，分布式系统是一组计算机一起工作，对于最终用户只显示为一台计算机。这些机器具有共享状态，可以处理并发操作，如果其中一台机器发生故障，不会影响整个系统的正常运行。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/davideuler/architecture.of.internet-product"
+                        target="_blank">互联网公司技术架构</a></h2>
+                    <div class="layui-colla-content">
+                      <p>作者收集的国内各大互联网公司技术架构的资料</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://medium.com/@NetflixTechBlog/tips-for-high-availability-be0472f2599c"
+                        target="_blank">高可用的部署技巧</a></h2>
+                    <div class="layui-colla-content">
+                      <p>Netflix 公司的工程师介绍，他们如何部署代码，提高服务的可用性，比如使用红黑部署、设置部署窗口等等。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://railsware.com/blog/2018/04/19/best-hosting-for-node-js-app/"
+                        target="_blank">Node.js 最佳托管商</a></h2>
+                    <div class="layui-colla-content">
+                      <p>现在，各大云服务商都支持 Node.js 主机，本文对比了最大的 6 家服务商各自的优缺点</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://www.culttt.com/2014/06/18/whats-difference-active-record-data-mapper/"
+                        target="_blank">Active Record 与 Data Mapper 的差异</a></h2>
+                    <div class="layui-colla-content">
+                      <p>关系型数据库的操作通常采用 ORM 库，将表格转换成对象。ORM 主要分成两种类型：Active Record 与 Data Mapper。本文讨论这两种模型的差异和适用场景。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://blog.pragmaticengineer.com/distributed-architecture-concepts-i-have-learned-while-building-payments-systems/"
+                        target="_blank">分布式系统的几个基本概念</a></h2>
+                    <div class="layui-colla-content">
+                      <p>Uber 架构师分享在搭建分布式支付系统过程中，遇到的最重要的几个概念：SLA、scaling、Consistency、Durability、Idempotency等。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">工作/职场</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/google/google-ctf" target="_blank">Google
+                        CTF 的试题</a></h2>
+                    <div class="layui-colla-content">
+                      <p>这个是试题库，收集了 Google 主办的黑客安全大赛 CTF 的题目。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/CyC2018/Interview-Notebook" target="_blank">《技术面试需要掌握的基础知识整理》</a></h2>
+                    <div class="layui-colla-content">
+                      <p>技术面试需要掌握的基础知识整理。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/guoxiaoxing/android-interview" target="_blank">Android
+                        开发工程师面试指南</a></h2>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md"
+                        target="_blank">Google 面试自学手册</a></h2>
+                    <div class="layui-colla-content">
+                      <p>一份爱好者整理的 Google 面试准备指南。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">科普/数学</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://zeszyty-naukowe.wwsi.edu.pl/zeszyty/zeszyt9/Geometric_interpretation_of_a_correlation.pdf"
+                        target="_blank">相关系数与余弦相似性</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061415.jpg" alt="" title="">
+                      <p>上面是相关系数的计算公式，这是统计学的基础公式。我一直不知道它是怎么推导出来的，为什么这个公式就能断定两个矢量的相关性，我读过的教科书都不解释这一点。</p>
+                      <p>这里有一篇论文，给出相关系数的<a href="https://www.stat.berkeley.edu/~rabbee/correlation.pdf" target="_blank">十三种解释</a>，但都写得不太容易理解。后来，我又读到了标题里面的那篇论文，指出相关系数就是两个矢量的<a
+                          href="http://www.ruanyifeng.com/blog/2013/03/cosine_similarity.html" target="_blank">余弦相似性</a>，所以完全相关是+1或-1，完全不相关是0，一下子就看懂了。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://datagenetics.com/blog/may12018/index.html" target="_blank">数码照相机如何工作</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061412.jpg" alt="" title="">
+                      <p>本文介绍数码相机 CMOS 芯片的感光原理，彩色的光线是如何变成数字信号的。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://www.thoughtco.com/low-and-high-pressure-1434434"
+                        target="_blank">气压的知识</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <p>气压就是大气的压力，一个标准大气压等于760毫米汞柱。有的地方气压高，有的地方气压低，这是风形成的根本原因，台风就是巨大的热带低气压。地球上，赤道由于高温蒸发是低压区，极地由于冷空气下降是高压区，这就形成了地球的风带。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://www.businessinsider.com/17-equations-that-changed-the-world-2014-3/?IR=T">改变世界的17个数学公式</a>(英文)</h2>
+                    <div class="layui-colla-content">
+                      <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018052511.jpg" alt="" title="">
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"> <a href="http://jamie-wong.com/post/color/" target="_blank" rel="noopener noreferrer">Color:
+                        From Hexcodes to Eyeballs</a>
+                    </h2>
+                    <div class="layui-colla-content">
+                      <p>人眼如何感受到色彩，读懂这篇文章需要一点物理学知识。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layui-collapse">
+      <div class="layui-colla-item">
+        <h2 class="layui-colla-title">工具</h2>
+        <div class="layui-colla-content layui-show">
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">资源</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="http://www.theoldrobots.com/index2.html" target="_blank">机器人数据库</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://cdn.yuque.com/yuque/0/2018/png/84141/1527321073136-49ebdc56-6011-43e5-a335-47d2b381a8d4.png"
+                    alt="Robots   The Old Robots Web Site.png | center | 340x363" title="">
+                  <p>这个数据库收集人类历史上生产的各种型号的机器人。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="http://gen.lib.rus.ec/scimag/repository_torrent/" target="_blank">Sci-hub
+                    的论文 BT 种子文件</a></h2>
+                <div class="layui-colla-content">
+                  <p>Sci-hub 是最大的免费论文下载网站，几个主要的论文数据库公司都在起诉它。现在，它放出了它的所有论文的 BT 下载种子文件。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/huangyz0918/Hackintosh-Installer-University/blob/master/README-CN.md"
+                    target="_blank">黑苹果安装学院</a></h2>
+                <div class="layui-colla-content">
+                  <p>自从苹果采用 Intel 的处理器，OS X 被黑客破解后可以安装在 Intel CPU 与部分 AMD CPU
+                    的机器上。从而出现了一大批非苹果设备而使用苹果操作系统的机器，被称为黑苹果（Hackintosh）。这个仓库收集了各种型号的黑苹果安装方法。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://archiveos.org/" target="_blank">ArchiveOS</a></h2>
+                <div class="layui-colla-content">
+                  <p>收集所有开源的操作系统的网站。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://love2.io/" target="_blank">love2.io</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个收集开源书籍的网站。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">命令行</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://www.shellcheck.net/" target="_blank">ShellCheck</a></h2>
+                <div class="layui-colla-content">
+                  <p>Bash 脚本的开源语法检查器。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/facebook/pyre-check" target="_blank">Pyre</a></h2>
+                <div class="layui-colla-content">
+                  <p>Facebook 推出 Python 的静态类型检查工具，有点像 Flowtype 对于 JS 代码的作用。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/sharkdp/bat" target="_blank">bat</a></h2>
+                <div class="layui-colla-content">
+                  <p>命令行的 cat 命令用来显示文件的内容，bat 命令完全跟 cat 一致，只有一个地方不一样，就是现在的内容会带有行号和代码高亮。</p>
+                  <img src="http://www.ruanyifeng.com/blogimg/asset/2018/bg2018051114.jpg" alt="">
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/RelaxedJS/ReLaXed" target="_blank">ReLaXed</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个将 HTML 文件转为 PDF 文件的命令行工具。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="http://react-slate.surge.sh/" target="_blank">React Slate</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个使用 React 组件写命令行脚本的框架。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/shobrook/rebound" target="_blank">rebound</a></h2>
+                <div class="layui-colla-content">
+                  <p>有人终于把这个工具写出来了，一旦 Python 或 JS 脚本报错，就到 Stack Overflow 取回报错信息的解释。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">前端</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/alangpierce/sucrase" target="_blank">sucrase</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个新的 JavaScript 转码器，号称比 Babel 快20倍。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/wiredjs/wired-elements" target="_blank">wired-elements</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061427.jpg" alt="" title="">
+                  <p>一个有手绘效果的网页组件库。但是，真正特别之处在于它的底层是 Web components，让我们看到了除了React/Vue之外，还有其他的路。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/mattkol/Chromely" target="_blank">Chromely</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060822.jpg" alt="" title="">
+                  <p>Electron 的挑战者越来越多，这个是 .NET 框架包装的 Chrome 浏览器内核。你现在可以使用 .NET 开发类似 Electron 的桌面应用。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/codesardine/Jadesktop" target="_blank">Jadesktop</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060817.jpg" alt="" title="">
+                  <p>一个使用 HTML5、CSS、JavaScript 和 Python 开发 Linux 桌面应用的工具。对的，你不需要 Electron。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/andlabs/libui" target="_blank">libui</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018053010.jpg" alt="" title="">
+                  <p>一个使用 C 语言写的 UI 组件库，具有很好的跨平台性，可以在不同的平台上获得相同的图形界面。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/idealista/tlsh-js" target="_blank">tlsh-js</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个生成字符串哈希的 JavaScript 库。它的特点是，字符串越相似，或者重复同样的模式，生成的哈希也越相似，可以用来计算两个字符串的相似程度。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/feathericons/feather">Feature Icons</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个开源图标库，提供一些 24x24 的常用图标。</p>
+                  <img src="https://www.wangbase.com/blogimg/asset/201805/bg2018052513.jpg" alt="" title="">
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/sindresorhus/ow">ow</a></h2>
+                <div class="layui-colla-content">
+                  <p>JavaScript 语言没有类型检查，运行时无法知道函数的参数是否为指定的类型。这个库就用来检查函数参数的类型，如果不符合要求就抛错。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/AllThingsSmitty/css-protips/tree/master/translations/zh-CN"
+                    target="_blank">css-protips</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个收集 CSS 使用技巧的库。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://dojo.io/blog/2018/05/02/2018-05-02-Dojo2-0-0-release/"
+                    target="_blank">Dojo 2.0</a></h2>
+                <div class="layui-colla-content">
+                  <p>前端框架 Dojo 发布了2.0版，它跟 jQuery 是一个年代的，至今不放弃也算值得尊敬了。我看了一下 API，核心概念也是虚拟
+                    DOM，没看到任何令人眼前一亮的创意，我不觉得它有机会赢得大量用户。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/rsuite/rsuite" target="_blank">RSUITE</a></h2>
+                <div class="layui-colla-content">
+                  <p>RSUITE（React Suite）是一套用于企业系统产品的 React 组件库。由 HYPERS 前端团队和 UX 团队共同构建，主要服务于公司的大数据产品。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://mustard-ui.com/" target="_blank">Mustard UI</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个简洁、好看的 CSS 框架，压缩后只有5.28KB。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">浏览器工具</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://sonarwhal.com" target="_blank">sonarwhal</a></h2>
+                <div class="layui-colla-content">
+                  <p>微软推出的开源网页 lint 工具（<a href="https://github.com/sonarwhal/online-service/" target="_blank">源码仓库</a>），可以在线扫描网页，提供无障碍、互通性、性能、PWA、安全五个方面的扫描结果，给出改进点。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/intoli/remote-browser" target="_blank">Remote
+                    Browser</a></h2>
+                <div class="layui-colla-content">
+                  <p>一个浏览器自动化框架，可以用脚本控制已经打开的浏览器</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"> <a href="https://flaviocopes.com/chrome-devtools-tips/#drag-and-drop-in-the-elements-panel"
+                    target="blank">Chrome DevTools 的一些使用技巧</a>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">软件</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://intoli.com/blog/youtube-mp3-downloader/" target="_blank">如何使用
+                    AWS LAMBDA 做一个 YOUTUBE MP3 下载器</a>(英文)</h2>
+                <div class="layui-colla-content">
+                  <p>作者做了一个 Bookmarklet。浏览 Youtube 的时候，只要按一下这个书签工具，就会把请求发到 AWS LAMBDA，然后抓取 Youtube 流文件，转码成 mp3 文后以后存到
+                    S3，再返回下载地址。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://drawpile.net/about/" target="_blank">Drawpile</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061417.jpg" alt="" title="">
+                  <p>多人实时协同作画的桌面应用。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://web.autocad.com/" target="_blank">AutoCAD 在线版</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060819.jpg" alt="" title="">
+                  <p>三月份的消息，今天才看到。AutoCAD 浏览器版上线了，跟桌面版基本一致，背后的技术是 Webassembly。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://getstream.io/winds/" target="_blank">Winds 2.0</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060820.jpg" alt="" title="">
+                  <p>一个开源的桌面 RSS 阅读器。</p>
+                </div>
                 <div class="layui-colla-item">
-                  <h2 class="layui-colla-title">工作/职场</h2>
+                  <h2 class="layui-colla-title"><a href="https://github.com/TruthHun/DocHub" target="_blank">DocHub</a></h2>
                   <div class="layui-colla-content">
-                    <div class="layui-colla-item">
-                      <h2 class="layui-colla-title"><a href="https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md"
-                          target="_blank">Google 面试自学手册</a></h2>
-                      <div class="layui-colla-content">
-                        <p>一份爱好者整理的 Google 面试准备指南。</p>
-                      </div>
-                    </div>
-
+                    <p>个人写的百度文库的开源仿制品。</p>
                   </div>
                 </div>
-
                 <div class="layui-colla-item">
-                  <h2 class="layui-colla-title">科普</h2>
+                  <h2 class="layui-colla-title"><a href="https://github.com/Tencent/PhoenixGo" target="_blank">PhoenixGo</a></h2>
                   <div class="layui-colla-content">
-                    <div class="layui-colla-item">
-                      <h2 class="layui-colla-title"> <a href="http://jamie-wong.com/post/color/" target="_blank" rel="noopener noreferrer">Color:
-                          From Hexcodes to Eyeballs</a>
-                      </h2>
-                      <div class="layui-colla-content">
-                        <p>人眼如何感受到色彩，读懂这篇文章需要一点物理学知识。</p>
-                      </div>
-                    </div>
+                    <p>腾讯公司根据 AlphaGo 的论文，实现的开源围棋软件。</p>
                   </div>
                 </div>
+                <div class="layui-colla-item">
+                  <h2 class="layui-colla-title"><a href="https://github.com/chrissimpkins/Crunch" target="_blank">Crunch</a></h2>
+                  <div class="layui-colla-content">
+                    <p>一个效果非常好的 PNG 图片压缩工具。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">Git/Github</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/kaxap/arl" target="_blank">arl</a></h2>
+                <div class="layui-colla-content">
+                  <p>各种语言最受欢迎的项目，按照 GitHub Star 的数量排行。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></h2>
+                <div class="layui-colla-content">
+                  <p>GitHub 官方的桌面 App。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/sallar/github-contributions-chart" target="_blank">github-contributions-chart</a></h2>
+                <div class="layui-colla-content">
+                  <p>GitHub 的用户主页有一张图，每一天就是一个小格子。你只要在这一天提交了代码，这个格子就是绿色。但是，这张图只显示过去的一年，即365个格子. 这个工具可以生成从你加入 GitHub
+                    那天起的所有格子。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/TejasQ/add-gitignore" target="_blank">.gitignore
+                    文件的命令行生成工具</a></h2>
+                <div class="layui-colla-content">
+                  <p>.gitignore 文件设置了哪些文件可以不用进入 Git 版本管理。这个命令行工具可以根据项目类型，自动生成 .gitignore 文件。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://gitea.io/en-us/">Gitea</a></h2>
+                <div class="layui-colla-content">
+                  <p>类似于 GitHub 和 GitLab 的开源项目，用于个人架设 Git 代码托管服务，使用 Go 语言实现。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/isomorphic-git/isomorphic-git" target="_blank">isomorphic-git</a></h2>
+                <div class="layui-colla-content">
+                  <p>Git 的 JavaScript 实现，这意味着你可以在 JS 里进行 Git 操作，比如从抓取/提交 commit，进行 diff 或 merge 等等。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">其他</h2>
+            <div class="layui-colla-content">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/wangshub/Douyin-Bot" target="_blank">抖音机器人</a></h2>
+                <div class="layui-colla-content">
+                  <p>作者用 Python + ADB 做的 Bot。它会自动打开 APP 对视频截图，然后请求腾讯的 <a href="http://ai.qq.com/" target="_blank">人脸识别
+                      API</a>，当颜值大于门限值 <kbd>BEAUTY_THRESHOLD</kbd>时，点赞并关注，接着翻到下一页，重复进行该过程。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/ambv/black" target="_blank">black</a></h2>
+                <div class="layui-colla-content">
+                  <p>Python 语言的格式要求特别高，因为它通过缩进判断语法区块。现在有了这个工具，就可以自动化格式化 Python 代码，所以你不用担心写出风格一团糟的代码。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://coolbackgrounds.io/" target="_blank">Cool Backgrounds</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060823.jpg" alt="" title="">
+                  <p>自动生成背景图片的工具网站，现在提供五种风格，每种都可以定制，看上去赏心悦目。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/experiencor/self-driving-toy-car" target="_blank">self-driving-toy-car</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060821.jpg" alt="" title="">
+                  <p>一个开源的自动驾驶玩具车，在小车上面绑了一个树莓派和摄像头。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://asteroidos.org/" target="_blank">Asteriod OS</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060818.jpg" alt="" title="">
+                  <p>开源的手表操作系统。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="http://calver.org/" target="_blank">CalVer</a></h2>
+                <div class="layui-colla-content">
+                  <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018060816.jpg" alt="" title="">
+                  <p>语义版本（SemVer）现在很流行，就是根据 API 的变动为版本编号。这个网址提出另一种编号方法：根据日历编号，版本号就是发布日期。很多软件已经在用了，最有名的就是 Ubuntu，它的版本格式是
+                    yy.mm，比如 16.04。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/google/nomulus" target="_blank">nomulus</a></h2>
+                <div class="layui-colla-content">
+                  <p>谷歌开源自家的顶级域名注册管理系统，也就是 <a href="https://registry.google" target="_blank">https://registry.google</a>
+                    背后的系统。如果你是域名注册商，可能用得到这个东西。</p>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="http://jgoboard.com/" target="_blank">jGoBoard</a></h2>
+                <div class="layui-colla-content">
+                  <p>我在寻找围棋软件的时候，发现了这个生成互动式围棋棋盘的 JavaScript 库，觉得功能和样式都满足需要。另外，AlphaGo 官网也提供一个<a href="https://deepmind.com/research/alphago/match-archive/alphago-games-simplified-chinese/"
+                      target="_blank">棋盘生成器</a>， 基于 <a href="http://wgo.waltheri.net/player" target="_blank">WGO.js</a>。</p>
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://chrome.google.com/webstore/detail/ipblade-privacy-protector/hojjgiebfmgmlpjojjkaehgohkolmoea"
+                    target="_blank">IPBlade</a></h2>
+                <div class="layui-colla-content">
+                  <p>有的网络服务限制 IP 地址，比如只有中国的 IP 地址才能使用。这个 Chrome 插件点击一下就可以改变浏览器的 IP 地址，从而绕过这些限制。免费版只能改成美国的 IP 地址。</p>
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/snail007/goproxy" target="_blank">goproxy</a></h2>
+                <div class="layui-colla-content">
+                  <p>Go 语言实现的高性能 http、https、websocket、tcp、udp、socks5 代理服务器。</p>
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title"><a href="https://github.com/reactos/reactos" target="_blank">ReactOS</a></h2>
+                <div class="layui-colla-content">
+                  <p>ReactOS 是一个开源的操作系统，目标是兼容 Windows，能够运行 Windows 的应用程序和驱动程序。它只能安装在 FAT16 或者 FAT32 的硬盘分区上面。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layui-collapse">
+        <div class="layui-colla-item">
+          <h2 class="layui-colla-title">视频</h2>
+          <div class="layui-colla-content layui-show">
+            <div class="layui-colla-item">
+              <h2 class="layui-colla-title"><a href="https://github.com/1c7/crash-course-computer-science-chinese"
+                  target="_blank">计算机科学速成课</a>(英文中字)</h2>
+              <div class="layui-colla-content">
+                <img src="https://www.wangbase.com/blogimg/asset/201806/bg2018061414.jpg" alt="" title="">
+                <p>志愿者从 Youtube 搬到 B 站的40集视频教程。</p>
+              </div>
+            </div>
+            <div class="layui-colla-item">
+              <h2 class="layui-colla-title"><a href="https://cs50.github.io/games/" target="_blank">哈佛大学游戏开发课程</a>(英文)</h2>
+              <div class="layui-colla-content">
+                <p>哈佛大学游戏开发课程 CS50，提供讲课视频、课程笔记、PPT 和作业等资料。</p>
+              </div>
+            </div>
+            <div class="layui-colla-item">
+              <h2 class="layui-colla-title"><a href="https://research.fb.com/the-facebook-field-guide-to-machine-learning-video-series/"
+                  target="_blank">Facebook 的机器学习视频教程</a>(英文)</h2>
+              <div class="layui-colla-content">
+                <p>《Facebook 机器学习指南》是由 Facebook 广告机器学习团队开发的六部分的视频系列。该系列分享了最好的现实世界实践，并提供了如何将机器学习功能应用于实际问题的实用技巧。</p>
+              </div>
+            </div>
+            <div class="layui-colla-item">
+              <h2 class="layui-colla-title"><a href="http://cs109.github.io/2015/index.html" target="_blank">哈佛大学《CS109：数据科学基础》的课程资料</a></h2>
+              <div class="layui-colla-content">
+                <p>1xx 编号的课程都是本科生的基础课程，我看了一下，讲的是 Python、基础的统计学知识和数学模型，提供免费的课程视频和PPT 下载.</p>
+              </div>
+            </div>
+            <div class="layui-colla-item">
+              <h2 class="layui-colla-title"><a href="https://education.github.community/t/20-of-the-most-popular-courses-on-github/27832"
+                  target="_blank">GitHub 最受欢迎的20个课程仓库</a></h2>
+              <div class="layui-colla-content">
+                <p>很多开放课程的仓库放在 GitHub 上面，GItHub 官方列出了最受欢迎的20个仓库。</p>
+              </div>
+            </div>
+            <div class="layui-colla-item">
+              <h2 class="layui-colla-title"><a href="https://data.berkeley.edu/education/data-8x" target="_blank">《Foundations
+                  of Data Science》</a></h2>
+              <div class="layui-colla-content">
+                <p>加州大学伯克利分校的视频课程《Foundations of Data Science》（数据科学基础），现在上网了。报名学习是免费的，如果需要证书才收费。
+
+                  课程分成三个部分，每个部分需要5个星期学习，都由加大的老师亲自教授。整个课程针对初学者，不需要任何统计学或编程的基础。<br>
+
+                  第一部分：Python 数据处理<br>
+                  第二部分：抽样推断<br>
+                  第三部分：预测与机器学习</p>
               </div>
             </div>
           </div>
@@ -116,7 +1033,9 @@
         <div class="layui-row layui-col-space15">
           <div class="layui-col-xs12">
             <div class="layui-card">
-              <div class="layui-card-header"><h2>往期列表</h2></div>
+              <div class="layui-card-header">
+                <h1>往期列表</h1>
+              </div>
               <div class="layui-card-body list">
                 <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-29.html">每周分享第 29 期</a>
                 <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-28.html">每周分享第 28 期</a>
