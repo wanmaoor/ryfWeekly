@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>阮一峰每周分享</title>
-  <title>Document</title>
+  <link rel="stylesheet" href="./layui-v2.4.5/layui/css/layui.css">
+  <style>
+    .list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .list a{
+      width: 20%;
+    }
+  </style>
 </head>
+
 <body>
-  <p>hello world</p>
+  <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>
+      <h2>阮一峰每周分享摘录</h2>
+    </legend>
+  </fieldset>
+  <div class="layui-container">
+    <div class="layui-col-xs12">
+      <div class="layui-collapse" lay-accordion="">
+        <div class="layui-colla-item">
+          <h2 class="layui-colla-title">电子书/文章</h2>
+          <div class="layui-colla-content layui-show">
+
+            <div class="layui-collapse" lay-accordion="">
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">前端</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/reactjs/react-basic" target="_blank">React
+                        - Basic Theoretical Concepts</a></h2>
+                    <div class="layui-colla-content">
+                      <p>React 官方关于 React 原始设计思想的解释。</p>
+                    </div>
+                  </div>
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="https://github.com/wojtekmaj/react-lifecycle-methods-diagram"
+                        target="_blank">React v16.3 生命周期的示意图</a></h2>
+                    <div class="layui-colla-content">
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">计算机</h2>
+                <div class="layui-colla-content">
+                  <div class="layui-colla-item">
+                    <h2 class="layui-colla-title"><a href="http://www.catonmat.net/blog/low-level-bit-hacks-you-absolutely-must-know/"
+                        target="_blank">Low Level Bit Hacks You Absolutely Must Know</a></h2>
+                    <div class="layui-colla-content">
+                      <p>位运算（bit operation）的用途，有很多例子。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">工具</h2>
+                <div class="layui-colla-content layui-show">
+
+                  <div class="layui-collapse" lay-accordion="">
+                    <div class="layui-colla-item">
+                      <h2 class="layui-colla-title"> <a href="https://flaviocopes.com/chrome-devtools-tips/#drag-and-drop-in-the-elements-panel"
+                          target="blank">Chrome DevTools 的一些使用技巧</a></h2>
+                      <div class="layui-colla-content layui-show">
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="layui-colla-item">
+                  <h2 class="layui-colla-title">工作/职场</h2>
+                  <div class="layui-colla-content">
+                    <div class="layui-colla-item">
+                      <h2 class="layui-colla-title"><a href="https://github.com/jwasham/coding-interview-university/blob/master/translations/README-cn.md"
+                          target="_blank">Google 面试自学手册</a></h2>
+                      <div class="layui-colla-content">
+                        <p>一份爱好者整理的 Google 面试准备指南。</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="layui-colla-item">
+                  <h2 class="layui-colla-title">科普</h2>
+                  <div class="layui-colla-content">
+                    <div class="layui-colla-item">
+                      <h2 class="layui-colla-title"> <a href="http://jamie-wong.com/post/color/" target="_blank" rel="noopener noreferrer">Color:
+                          From Hexcodes to Eyeballs</a>
+                      </h2>
+                      <div class="layui-colla-content">
+                        <p>人眼如何感受到色彩，读懂这篇文章需要一点物理学知识。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 20px; background-color: #F2F2F2;margin-top: 20px">
+        <div class="layui-row layui-col-space15">
+          <div class="layui-col-xs12">
+            <div class="layui-card">
+              <div class="layui-card-header"><h2>往期列表</h2></div>
+              <div class="layui-card-body list">
+                <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-29.html">每周分享第 29 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-28.html">每周分享第 28 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html">每周分享第 27 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-26.html">每周分享第 26 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-25.html">每周分享第 25 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-24.html">每周分享第 24 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-23.html">每周分享第 23 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-22.html">每周分享第 22 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-21.html">每周分享第 21 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-20.html">每周分享第 20 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-19.html">每周分享第 19 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-18.html">每周分享第 18 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html">每周分享第 17 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-16.html">每周分享第 16 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-15.html">每周分享第 15 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-14.html">每周分享第 14 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-13.html">每周分享第 13 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-12.html">每周分享第 12 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-11.html">每周分享第 11 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-10.html">每周分享第 10 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-9.html">每周分享第 9 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-8.html">每周分享第 8 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-7.html">每周分享第 7 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-6.html">每周分享第 6 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html">每周分享第 5 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-4.html">每周分享第 4 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-3.html">每周分享第 3 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/04/weekly-issue-2.html">每周分享第 2 期</a>
+                <a href="http://www.ruanyifeng.com/blog/2018/04/weekly-issue-1.html">每周分享第 1 期</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./layui-v2.4.5/layui/layui.js"></script>
+  <script src="./index.js"></script>
 </body>
+
 </html>
