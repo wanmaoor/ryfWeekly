@@ -13,7 +13,11 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-
+    @media screen and (device-aspect-ratio: 16/9), (device-aspect-ratio: 18/9){
+      .list a {
+        width: 33%;
+      }
+    }
     .list a {
       width: 20%;
     }
@@ -1534,7 +1538,7 @@
       <div class="layui-collapse">
         <div class="layui-colla-item">
           <h2 class="layui-colla-title">视频</h2>
-          <div class="layui-colla-content layui-show">
+          <div class="layui-colla-content">
             <div class="layui-colla-item">
               <h2 class="layui-colla-title"><a href="https://github.com/1c7/crash-course-computer-science-chinese"
                   target="_blank">计算机科学速成课</a>(英文中字)</h2>
@@ -1566,7 +1570,7 @@
               <h2 class="layui-colla-title"><a href="https://education.github.community/t/20-of-the-most-popular-courses-on-github/27832"
                   target="_blank">GitHub 最受欢迎的20个课程仓库</a></h2>
               <div class="layui-colla-content">
-                <p>很多开放课程的仓库放在 GitHub 上面，GItHub 官方列出了最受欢迎的20个仓库。</p>
+                <p>很多开放课程的仓库放在 GitHub 上面，GitHub 官方列出了最受欢迎的20个仓库。</p>
               </div>
             </div>
             <div class="layui-colla-item">
