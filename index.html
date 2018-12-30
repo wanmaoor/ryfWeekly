@@ -13,16 +13,13 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-
-    @media screen and (device-aspect-ratio: 16/9),
-    (device-aspect-ratio: 18/9) {
-      .list a {
+    .list a{
+      width: 20%;
+    }
+    @media (max-width: 768px) {
+      .list a{
         width: 33%;
       }
-    }
-
-    .list a {
-      width: 20%;
     }
 
     .footer span {
@@ -44,7 +41,6 @@
         <div class="layui-colla-item">
           <h2 class="layui-colla-title">电子书/文章/教程</h2>
           <div class="layui-colla-content layui-show">
-
             <div class="layui-collapse">
               <div class="layui-colla-item">
                 <h2 class="layui-colla-title">前端</h2>
@@ -5837,44 +5833,46 @@
               <div class="layui-card-header">
                 <h1>往期列表</h1>
               </div>
-              <div class="layui-card-body list">
-                <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-37.html">每周分享第 37 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-36.html">每周分享第 36 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-35.html">每周分享第 35 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-34.html">每周分享第 34 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-33.html">每周分享第 33 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-32.html">每周分享第 32 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-31.html">每周分享第 31 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-30.html">每周分享第 30 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-29.html">每周分享第 29 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-28.html">每周分享第 28 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html">每周分享第 27 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-26.html">每周分享第 26 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-25.html">每周分享第 25 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-24.html">每周分享第 24 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-23.html">每周分享第 23 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-22.html">每周分享第 22 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-21.html">每周分享第 21 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-20.html">每周分享第 20 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-19.html">每周分享第 19 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-18.html">每周分享第 18 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html">每周分享第 17 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-16.html">每周分享第 16 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-15.html">每周分享第 15 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-14.html">每周分享第 14 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-13.html">每周分享第 13 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-12.html">每周分享第 12 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-11.html">每周分享第 11 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-10.html">每周分享第 10 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-9.html">每周分享第 9 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-8.html">每周分享第 8 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-7.html">每周分享第 7 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-6.html">每周分享第 6 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html">每周分享第 5 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-4.html">每周分享第 4 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-3.html">每周分享第 3 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/04/weekly-issue-2.html">每周分享第 2 期</a>
-                <a href="http://www.ruanyifeng.com/blog/2018/04/weekly-issue-1.html">每周分享第 1 期</a>
+              <div class="layui-card-body">
+                <div class="list">
+                  <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-37.html">每周分享第 37 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-36.html">每周分享第 36 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-35.html">每周分享第 35 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/12/weekly-issue-34.html">每周分享第 34 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-33.html">每周分享第 33 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-32.html">每周分享第 32 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-31.html">每周分享第 31 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-30.html">每周分享第 30 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/11/weekly-issue-29.html">每周分享第 29 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-28.html">每周分享第 28 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html">每周分享第 27 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-26.html">每周分享第 26 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/10/weekly-issue-25.html">每周分享第 25 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-24.html">每周分享第 24 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-23.html">每周分享第 23 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-22.html">每周分享第 22 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/09/weekly-issue-21.html">每周分享第 21 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-20.html">每周分享第 20 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-19.html">每周分享第 19 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-18.html">每周分享第 18 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html">每周分享第 17 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/08/weekly-issue-16.html">每周分享第 16 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-15.html">每周分享第 15 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-14.html">每周分享第 14 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-13.html">每周分享第 13 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/07/weekly-issue-12.html">每周分享第 12 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-11.html">每周分享第 11 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-10.html">每周分享第 10 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-9.html">每周分享第 9 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-8.html">每周分享第 8 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/06/weekly-issue-7.html">每周分享第 7 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-6.html">每周分享第 6 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html">每周分享第 5 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-4.html">每周分享第 4 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/05/weekly-issue-3.html">每周分享第 3 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/04/weekly-issue-2.html">每周分享第 2 期</a>
+                  <a href="http://www.ruanyifeng.com/blog/2018/04/weekly-issue-1.html">每周分享第 1 期</a>
+                </div>
               </div>
             </div>
           </div>
